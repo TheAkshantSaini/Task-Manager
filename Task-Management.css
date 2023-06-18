@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #000000; /* Black */
+    color: #F1C27B; /* Light brown */
+}
+
+h1 {
+    text-align: center;
+}
+
+#task-container {
+    margin-top: 20px;
+}
+
+#task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="date"],
+.input-container input[type="time"] {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 10px; /* Rounded edges */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-container button {
+    padding: 8px 16px;
+}
+
+#task-list {
+    list-style-type: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.editing {
+    background-color: #A0C49D; /* Olive */
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #000000; /* Black */
+}
+
+.task-content span {
+    flex: 1;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.delete-button,
+.edit-button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px; /* Rounded edges */
+}
+
+.delete-button {
+    background-color: #B70404; /* Dark red */
+    color: #F8E8EE; /* Light pink */
+}
+
+.edit-button {
+    background-color: #85A389; /* Greenish olive */
+    color: #F7FFE5; /* Off-white */
+}
+
+.delete-button:hover,
+.edit-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.add-button,
+.edit-task-button {
+    background-color: #85A389; /* Greenish olive */
+    color: #FFFFFF; /* White */
+}
+
+.add-button:hover,
+.edit-task-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.task-content:nth-child(even) {
+    background-color: #000000; /* Black */
+}
+
+.task-content:nth-child(even) .delete-button {
+    background-color: #B70404; /* Dark red */
+}
+
+.task-content:nth-child(even) .edit-button {
+    background-color: #85A389; /* Greenish olive */
+    color: #F7FFE5; /* Off-white */
+}
